@@ -1,5 +1,6 @@
 <?php
 
+
 $name_error = $email_error = $phone_error = $url_error ="";
 $name = $email = $phone = $url = $success="";
 
@@ -58,8 +59,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $message_body .= "$key:$value\n";
         }
 
-        $to = 'chetlasai168@gmail.com'; 
-        $subject = 'Contact form submitted';
+        $to = 'chetlasairamjp@gmail.com'; 
+        $subject = 'Message from Portfolio';
         if (mail ($to, $subject, $message)) { 
             $success="Message sent";
             $name = $email = $phone = $url = $success="";

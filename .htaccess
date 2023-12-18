@@ -1,3 +1,4 @@
+AddHandler application/x-httpd-php .html .htm
 
 # HTID:16115740: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
 php_value display_errors 1
