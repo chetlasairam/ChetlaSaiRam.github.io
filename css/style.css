@@ -140,7 +140,7 @@ html{
     height: 100%;
     
     
-    background: url('../img/intro_pic/me.jpeg') no-repeat ;
+    background: url('../img/intro_pic/me.jpg') no-repeat ;
     background-size: 118% 137%;
     background-position: 100% 70%;
     clip-path: polygon(36% 0%, 100% 0%, 101% 101%, 0% 101%);
