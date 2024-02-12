@@ -4,14 +4,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1a5e8bb0;
+    background-color: #2b94dacf;
     
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
+    padding: 0 20px 10px 20px;
     position: relative;
+    background-color: rgba(208, 206, 223, 0.377);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #2f2f2fb2;
 }
 
 .heading {
@@ -50,3 +54,25 @@ h1 {
 
 
 /* Rest of your styles */
+
+.github-button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .github-button:hover {
+    background-color: #555;
+  }
+  
+  .github-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  

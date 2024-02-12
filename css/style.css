@@ -86,7 +86,7 @@ html{
 .intro{
     margin: 0%;
     padding: 4% 10%;
-    width: 100vw;
+    width: auto;
     height: 43vw;
     background-color: var(--secondary-color);
     overflow: hidden;
@@ -164,7 +164,7 @@ html{
 .about{
     margin: 0;
     padding: 5% 5% 5% 5%;
-    width: 100vw;
+    width: auto;
     
     height: auto;
     background-color: var(--secondary-color);
@@ -213,7 +213,7 @@ html{
 .projects{
     margin: 0;
     padding: 5% 5% 0% 5%;
-    width: 100vw;
+    width: auto;
     
     height: auto;
     background-color: var(--secondary-color);
@@ -441,7 +441,7 @@ html{
 .services{
     margin: 0;
     padding: 5% 5% 0% 5%;
-    width: 100vw;
+    width: auto;
     min-height: 100vh;
     height: auto;
     background-color: var(--secondary-color);
@@ -471,7 +471,7 @@ html{
 .languages{
   margin: 0;
   padding: 0% 5%;
-  width: 100vw;
+  width: auto;
   min-height: 90vh;
   height: auto;
   background-color: var(--secondary-color);
