@@ -1,398 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sai Ram</title>
+    <title>Sai Ram Chetla - Portfolio</title>
     <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon" />
-    
-
-    <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Plaster&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-    <!--  Bootstrap css file  -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-
-    <!--  font awesome icons  -->
-    <link rel="stylesheet" href="./css/all.min.css">
-
-    <!--icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!--  custom css file  -->
-    <link rel="stylesheet" href="./css/style.css">
-
-    <!--  custom responsive file  -->
-    <link rel="stylesheet" href="./css/responsive.css">
-
-    
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
 
-<body>   
-    <!--main-->
-    <div class="main">
-
-    
-    
-
-    
-        <!--Header-->
-    <div class="header-area sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-dark  ">
-            <a class="navbar-brand-logo" href="#">S</a>
-            <a class="navbar-brand-name" href="#">CHETLA SAI RAM</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+    <header class="header-area sticky-top">
+        <nav class="navbar">
+            <a class="navbar-brand" href="#home"><span>S</span>ai Ram Chetla</a>
+            <button class="navbar-toggler" id="navbar-toggler-btn">
+                <i class="fas fa-bars"></i>
             </button>
-          
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="mr-auto"></div>
-              <ul class="navbar-nav ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#about">about <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="#Experience">Experience <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">projects</a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#contact">contact</a>
-                </li> -->
-                <li class="nav-item">
-                    <a class="nav-link" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=chetlasairamjp@gmail.com">hire me</a>
-                </li>
-                <li class="nav-item">
-                    <button class="btn  my-2 my-sm-3" onclick="window.open('./download/Sai Ram Chetla.pdf')"  type="submit">Download CV</button>
-                </li>
-                
-                
+            <div class="navbar-collapse" id="navbar-menu">
+                <ul class="navbar-nav">
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#experience">Experience</a></li>
+                    <li><a class="nav-link" href="#services">Services</a></li>
+                    <li><a class="nav-link" href="#projects">Projects</a></li>
+                    <li><a class="btn-hire" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=chetlasairamjp@gmail.com" target="_blank">Hire Me</a></li>
                 </ul>
-              
             </div>
-          </nav>
-    </div>
+        </nav>
+    </header>
 
-
-
-    <!--End Header-->
-
-  <!--intro-->
-    <div class="intro" id="intro">
-        
-        <div class="card row">
-
-            <div class="name">
-                <h2 class="title-text hey">Hey!</h2>
-                <h1 class="title-text text-uppercase">I am sai ram chetla</h1>
-                <h5 class="title-text ">
-                    
-                    <span class="skills">-Application Development - Flutter</span>
-                    <span class="skills">-Web development</span>
-                    <!-- <span class="skills">-Flutter</span> -->
-                    <span class="skills">-AI/ML engineering</span>
-                    <span class="skills">-Embedded Software engineering</span>
-                </h5>
+    <main>
+        <section class="hero-section" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <span class="subtitle">Hey there!</span>
+                        <h1>I am Sai Ram Chetla</h1>
+                        <p>A versatile professional skilled in Application Development, Web Development, AI/ML Engineering, and Embedded Systems.</p>
+                        <a href="./download/Sai Ram Chetla.pdf" class="btn-primary" target="_blank" download>Download CV</a>
+                    </div>
+                    <div class="hero-image-container">
+                        <div class="hero-image">
+                            <img src="./img/intro_pic/me.jpg" alt="Sai Ram Chetla">
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="dp">
-
-                <!--<div class="mask"></div>-->
-
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                </div>
+                <p class="about-text">
+                    I am a versatile professional with a robust background spanning data science, embedded systems, software engineering, IoT, and application development. As a Data Science Intern at Elysium Analytics, I've leveraged leading-edge technologies to excel in NLP, image classification, and machine learning workflows. My tenure as an Embedded Software Engineer at Hyundai Mobis fortified my expertise in embedded systems, while my role as a Subject Matter Expert at Bartleby showcased my proficiency in C++, Python, and Java. Furthermore, my experience at Zenindo highlighted my capabilities in IoT, while my adeptness as an Application Developer underscores my mastery in Flutter for cross-platform app development. With a keen eye for UI/UX, I've crafted impactful projects such as Kent Connects, Husk, Face Mask Detection system, and the Get Dish App, emphasizing intuitive design and seamless functionality to drive user engagement and satisfaction.
+                </p>
             </div>
+        </section>
 
+        <section class="experience-section" id="experience">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Experience</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>MRI SOFTWARE</h3>
+                            <p>At MRI Software, I play a key role in developing AI-driven solutions for real estate applications. I have contributed to building an AI chatbot specializing in lease agreement analysis using advanced NLP models like PyTorch, TensorFlow, and Hugging Face. My work in upgrading Elasticsearch from 1.7 to 8.8, incorporating Reciprocal Rank Fusion (RRF) for hybrid search, has significantly improved search accuracy and GPU efficiency.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Bartleby</h3>
+                            <p>Led as an expert in C, C++, Python, Java, offering guidance to teams, solving 1000+ complex challenges in algorithms, data structures, system design, and optimization, showcasing extensive software development proficiency.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>AMBIQUEST</h3>
+                            <p>At Ambiquest, I focused on AI-powered mobile application development. I developed a cross-platform fitness application using Flutter, integrating TensorFlow Lite for on-device activity recognition and OpenCV for real-time motion tracking. I designed RESTful APIs using FastAPI and managed PostgreSQL and Snowflake databases for large-scale analytics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Services</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-pencil-ruler"></i></div>
+                        <h3>Web Designing</h3>
+                        <p>Translating ideas into visually engaging and user-centric website designs.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Web Development</h3>
+                        <p>Building interactive, responsive, and high-performance websites from design concepts.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>App Development</h3>
+                        <p>Developing modern, real-time applications with intuitive user experiences for both Android and iOS.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section" id="projects">
+            <div class="dashboard-container">
+                <aside class="sidebar">
+                    <div class="sidebar-header">
+                        <h3>Filter Projects</h3>
+                    </div>
+                    <nav class="sidebar-nav">
+                        <ul>
+                            <li><a href="#" class="filter-btn active" data-filter="all"><i class="fas fa-grip-horizontal"></i> All Projects</a></li>
+                            <li><a href="#" class="filter-btn" data-filter="iot"><i class="fas fa-robot"></i> IoT & Robotics</a></li>
+                            <li><a href="#" class="filter-btn" data-filter="app"><i class="fas fa-mobile-alt"></i> Mobile Apps</a></li>
+                            <li><a href="#" class="filter-btn" data-filter="web"><i class="fas fa-globe"></i> Web Development</a></li>
+                            <li><a href="#" class="filter-btn" data-filter="ai"><i class="fas fa-brain"></i> AI / ML</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <main class="project-main-content">
+                    <div class="project-grid">
+                        <div class="project-card" data-category="iot">
+                            <img src="./img/intro_pic/walkingrobot.jpg" alt="Walking Robot">
+                            <div class="card-content">
+                                <h5>Walking Robot</h5>
+                                <p>An autonomous walking robot with environment sensing.</p>
+                                <button class="btn-view-details" data-project-id="walking-robot">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-card" data-category="iot">
+                            <img src="./img/intro_pic/painpointer.jpg" alt="Pain Pointer">
+                            <div class="card-content">
+                                <h5>Pain Pointer</h5>
+                                <p>An IoT device for patients to indicate pain points.</p>
+                                <button class="btn-view-details" data-project-id="pain-pointer">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-card" data-category="iot">
+                            <img src="./img/intro_pic/switchboard.png" alt="Smart SwitchBoard">
+                            <div class="card-content">
+                                <h5>Smart SwitchBoard</h5>
+                                <p>A smart home switchboard controllable via a mobile app.</p>
+                                <button class="btn-view-details" data-project-id="smart-switchboard">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-card" data-category="app">
+                            <img src="./img/intro_pic/husk.png" alt="Husk Chatting App">
+                            <div class="card-content">
+                                <h5>Husk - Chatting App</h5>
+                                <p>A real-time chatting application with modern features.</p>
+                                <button class="btn-view-details" data-project-id="husk-app">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-card" data-category="web">
+                            <img src="./img/intro_pic/kentconnects.png" alt="KentConnects Social Website">
+                            <div class="card-content">
+                                <h5>KentConnects</h5>
+                                <p>A social networking site for university students.</p>
+                                <button class="btn-view-details" data-project-id="kent-connects">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-card" data-category="ai">
+                            <img src="./img/intro_pic/facemask.png" alt="Face Mask Detection">
+                            <div class="card-content">
+                                <h5>Face Mask Detection</h5>
+                                <p>An AI model to detect face masks in real-time.</p>
+                                <button class="btn-view-details" data-project-id="face-mask">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-card" data-category="app">
+                            <img src="./img/intro_pic/getdish.png" alt="GetDish Food App">
+                            <div class="card-content">
+                                <h5>GetDish - Food App</h5>
+                                <p>A food delivery application with a seamless UI/UX.</p>
+                                <button class="btn-view-details" data-project-id="get-dish">View Details</button>
+                            </div>
+                        </div>
+                         <div class="project-card" data-category="ai">
+                            <img src="./img/intro_pic/sudokusolver.jpg" alt="Sudoku Solver">
+                            <div class="card-content">
+                                <h5>Sudoku Solver</h5>
+                                <p>A visual Sudoku solver using computer vision.</p>
+                                <button class="btn-view-details" data-project-id="sudoku-solver">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-card" data-category="ai">
+                            <img src="./img/intro_pic/heyarvin.jpg" alt="Hey Arvin">
+                            <div class="card-content">
+                                <h5>Hey Arvin</h5>
+                                <p>A personal AI voice assistant.</p>
+                                <button class="btn-view-details" data-project-id="hey-arvin">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/chetla.sairam" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://github.com/chetlasairam" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sai-ram-chetla/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=chetlasairamjp@gmail.com" target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2025 Sai Ram Chetla. All Rights Reserved.</p>
         </div>
+    </footer>
 
-    </div>
-
-
-    <!--end intro-->
-
-    <!--Start about-->
-
-    <div class="about" id="about">
-        <h1 class="banner text-uppercase">about</h1>
-        <p class="para">
-            I am a versatile professional with a robust background spanning data science, embedded systems, software engineering, IoT, and application development. As a Data Science Intern at Elysium Analytics, I've leveraged leading-edge technologies to excel in NLP, image classification, and machine learning workflows. My tenure as an Embedded Software Engineer at Hyundai Mobis fortified my expertise in embedded systems, while my role as a Subject Matter Expert at Bartleby showcased my proficiency in C++, Python, and Java. Furthermore, my experience at Zenindo highlighted my capabilities in IoT, while my adeptness as an Application Developer underscores my mastery in Flutter for cross-platform app development. With a keen eye for UI/UX, I've crafted impactful projects such as Kent Connects, Husk, Face Mask Detection system, and the Get Dish App, emphasizing intuitive design and seamless functionality to drive user engagement and satisfaction.
-
-        </p>
-        <button class="btn " onclick="window.open('./download/Resume.docx')" type="submit">Download CV</button>
-    </div>
-
-    <!--end about-->
-
-    <!--Start Experience-->
-
-    <div class="about" id="Experience">
-    <h1 class="banner text-uppercase">Experience</h1>
-
-    <ul>
-        <h2 class="text-uppercase">MRI SOFTWARE</h2>
-        <li>
-            At MRI Software, I play a key role in developing AI-driven solutions for real estate applications. I have contributed to building an AI chatbot specializing in lease agreement analysis using advanced NLP models like PyTorch, TensorFlow, and Hugging Face. My work in upgrading Elasticsearch from 1.7 to 8.8, incorporating Reciprocal Rank Fusion (RRF) for hybrid search, has significantly improved search accuracy and GPU efficiency. Additionally, I developed a fast and optimized relevant segment retrieval solution, leveraging SpaCy, FastEmbed, and TensorFlow, leading to a 40% reduction in service pod initialization time. My contributions also include full-stack search UI development with React.js and Node.js, designing LTR models for ranking, and implementing scalable AI-powered recommendation systems through Azure ML and Data Factory.      
-        </li>
-        
-    </ul>
-
-    <ul>
-        <h2 class="text-uppercase">Bartleby</h2>
-        <li>
-            Led as an expert in C, C++, Python, Java, offering guidance to teams, solving 1000+ complex challenges in algorithms, data structures, system design, and optimization, showcasing extensive software development proficiency.
-        </li>
-    </ul>
-
-    <ul>
-        <h2 class="text-uppercase">AMBIQUEST</h2>
-        
-        <li>
-            At Ambiquest, I focused on AI-powered mobile application development. I developed a cross-platform fitness application using Flutter, integrating TensorFlow Lite for on-device activity recognition and OpenCV for real-time motion tracking. I designed RESTful APIs using FastAPI and managed PostgreSQL and Snowflake databases for large-scale analytics. My work included implementing GPU-accelerated computer vision solutions and establishing CI/CD pipelines on GitLab for seamless deployment. Ensuring security and scalability was a priority, leading to efficient cloud-based AI solutions.
-
-These experiences highlight my ability to develop AI applications, optimize search and recommendation systems, and manage scalable cloud-based ML pipelines while integrating MLOps principles. Let me know if you want any refinements!
-        </li>
-    </ul>
-</div>
-
-
-    <!--end Experience-->
-
-
-    <!--Start projects-->
-    <div class="projects" id="projects">
-        <h1 class="banner text-uppercase">projects</h1>
-    
-        <div class="hex-div">
-    <ul class="honeycomb">
-        <li class="honeycomb-cell">
-            <a href="projects/walking_robot_page.html">
-                <img class="honeycomb-cell_img" src="./img/intro_pic/walkingrobot.jpg">
-                <div class="honeycomb-cell_title">Walking Robot</div>
-            </a>
-        </li>
-        <li class="honeycomb-cell">
-            <a href="projects/painpointer.html">
-                <img class="honeycomb-cell_img" src="./img/intro_pic/painpointer.jpg">
-                <div class="honeycomb-cell_title">Pain Pointer</div>
-            </a>
-        </li>
-        <li class="honeycomb-cell">
-            <a href="projects/smartswitchboard.html">
-                <img class="honeycomb-cell_img" src="./img/intro_pic/switchboard.png">
-                <div class="honeycomb-cell_title">Smart SwitchBoard</div>
-            </a>
-        </li>
-        <li class="honeycomb-cell">
-            <a href="projects/husk.html">
-                <img class="honeycomb-cell_img" src="./img/intro_pic/husk.png">
-                <div class="honeycomb-cell_title">Husk<small> Chatting App</small></div>
-            </a>
-        </li>
-        <li class="honeycomb-cell">
-            <a href="projects/kentconnects.html">
-                <img class="honeycomb-cell_img" src="./img/intro_pic/kentconnects.png">
-                <div class="honeycomb-cell_title">KentConnects<small> Social Website</small></div>
-            </a>
-        </li>
-        <li class="honeycomb-cell">
-            <a href="projects/facemaskdetection.html">
-                <img class="honeycomb-cell_img" src="./img/intro_pic/facemask.png">
-                <div class="honeycomb-cell_title">Face Mask Detection</div>
-            </a>
-        </li>
-        <li class="honeycomb-cell">
-            <a href="projects/getdish.html">
-                <img class="honeycomb-cell_img" src="./img/intro_pic/getdish.png">
-                <div class="honeycomb-cell_title">GetDish<small> Food App</small></div>
-            </a>
-        </li>
-        <li class="honeycomb-cell">
-            <a href="projects/sudoku solver.html">
-                <img class="honeycomb-cell_img" src="./img/intro_pic/sudokusolver.jpg">
-                <div class="honeycomb-cell_title">Sudoku Solver</div>
-            </a>
-        </li>
-        <li class="honeycomb-cell">
-            
-                <img class="honeycomb-cell_img" src="./img/intro_pic/heyarvin.jpg">
-                <div class="honeycomb-cell_title">Hey Arvin</div>
-            
-        </li>
-        
-        <li class="honeycomb-cell honeycomb_Hidden">
-        </li>
-    </ul>
-</div>
-</div>
-    <!--end projects-->
-
-
-    <!--Start services-->
-    <div class="services" id="services">
-        <h1 class="banner text-uppercase">services</h1>
-
-        <div class="hex-div">
-            <ul class="honeycomb">
-                <li class="honeycomb-cell honeycomb-cell-vertical">
-    <img class="honeycomb-cell_img" src="./img/intro_pic/webdesigning.png">
-    <div class="honeycomb-cell_title"></div>
-    <div class="honeycomb-cell_theory down">Web Designing
-        <small>Translating ideas into visually engaging and user-centric website designs</small>
-    </div>
-</li>
-<li class="honeycomb-cell honeycomb-cell-vertical">
-    <img class="honeycomb-cell_img" src="./img/intro_pic/webdevelopment.png">
-    <div class="honeycomb-cell_title">Graphic Design</div>
-    <div class="honeycomb-cell_theory down">Web Development
-        <small>Building interactive, responsive, and high-performance websites from design concepts</small>
-    </div>
-</li>
-<li class="honeycomb-cell honeycomb-cell-vertical">
-    <img class="honeycomb-cell_img" src="./img/intro_pic/appdev.png">
-    <div class="honeycomb-cell_title">Illustration</div>
-    <div class="honeycomb-cell_theory down">App Development
-        <small>Developing modern, real-time applications with intuitive user experiences</small>
-    </div>
-</li>
-
-<!--                 <li class="honeycomb-cell honeycomb-cell-vertical">
-                    <img class="honeycomb-cell_img" src="./img/intro_pic/photoshop.jpg">
-                    <div class="honeycomb-cell_title">Motion Graphics</div>
-                    <div class="honeycomb-cell_theory down">Photoshop<small>Cover pages for novels and pictures are also edited here</small></div>
-                </li> -->
-
-                <li class="honeycomb-cell honeycomb_Hidden">
-                </li>
-            </ul>
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modal-body">
+                </div>
         </div>
     </div>
 
-    <!--end services-->
-
-
-    <!--Start languages-->
-
-    <div class="languages" id="languages">
-
-        <h1 class="banner text-uppercase">languages</h1>
-
-        <div class="hex-div">
-            <ul class="honeycomb">
-                <li class="honeycomb-cell honeycomb-cell-vertical">
-                    <img class="honeycomb-cell_img" src="./img/intro_pic/c.png">
-                    <div class="honeycomb-cell_title">C</div>
-                    <div class="honeycomb-cell_theory down">C<small>Language to learn basic programming</small></div>
-
-                </li>
-                <li class="honeycomb-cell honeycomb-cell-vertical">
-                    <img class="honeycomb-cell_img" src="./img/intro_pic/pyt.jpg">
-                    <div class="honeycomb-cell_title">Python</div>
-                    <div class="honeycomb-cell_theory down">Python<small>Tool for Machine learning, Image processing</small></div>
-
-                </li>
-                <li class="honeycomb-cell honeycomb-cell-vertical">
-                    <img class="honeycomb-cell_img" src="./img/intro_pic/dart.jpg">
-                    <div class="honeycomb-cell_title">Dart</div>
-                    <div class="honeycomb-cell_theory down">Dart<small>Android and IOS apps are developed using this</small></div>
-                </li>
-                <li class="honeycomb-cell honeycomb-cell-vertical">
-                    <img class="honeycomb-cell_img" src="./img/intro_pic/js.png">
-                    <div class="honeycomb-cell_title">Java Script </div>
-                    <div class="honeycomb-cell_theory down">Java Script<small>Developed fully functioning websites using this</small></div>
-                </li>
-                
-
-                <li class="honeycomb-cell honeycomb_Hidden">
-                </li>
-            </ul>
-        </div>
-
-    </div>
-    
-
-    <!--end languages-->
-
-
-    <!--Contact PHP-->
-
-    <?php include('form_process.php'); ?>
-
-    <!--End Contact PHP-->
-    
-
-    
-
-<!--Start contact-->
-<!--     
-<div class="contact">
-        <div class="container">  
-            <form id="contact" action="<?= $_SERVER['PHP_SELF'];?>" method="post">
-              <h3>Quick Contact</h3>
-              <h4>Contact us today, and get reply with in 24 hours!</h4>
-              <fieldset>
-                <input placeholder="Your name" type="text" tabindex="1" name="name" value="<?= $name?>" >
-                <span class="error"><?= $name_error ?></span>
-              </fieldset>
-              <fieldset>
-                <input placeholder="Your Email Address" type="text" name="email" value="<?= $email?>" tabindex="2">
-                <span class="error"><?= $email_error ?></span>
-              </fieldset>
-              <fieldset>
-                <input placeholder="Your Phone Number" type="text" name="phone" value="<?= $phone?>" tabindex="3" >
-                <span class="error"><?= $phone_error ?></span>
-              </fieldset>
-              <fieldset>
-                <input placeholder="Your Web Site starts with http://" type="text" name="url" value="<?= $url?>" tabindex="4" >
-                <span class="error"><?= $url_error ?></span>
-              </fieldset>
-              <fieldset>
-                <textarea placeholder="Type your Message Here...." type="text" name="message" value="<?= $message?>" tabindex="5" ></textarea>
-                
-              </fieldset>
-              <fieldset>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-              </fieldset>
-              <div class="success"><?= $success ?></div>
-            </form>
-           
-            
-          </div>
-    </div> -->
-
-    <!--end contact-->
-    
-
-    <!--Start icons-->
-    <div class="icons">
-        <a href="https://www.facebook.com/chetla.sairam" class="fa fa-facebook"></a>
-        <a href="https://github.com/chetlasairam" class="fa fa-github"></a>
-        <a href="https://www.linkedin.com/in/sai-ram-chetla/" class="fa fa-linkedin"></a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=chetlasairamjp@gmail.com" target="_blank" class="fa fa-google"></a>
-    </div>      
-    
-        <!--end icons-->
-
-
-
-
-
-
-    <!--  Jquery js file  -->
-    <script src="./js/jquery.3.4.1.js"></script>
-    
-    <!--  Bootstrap js file  -->
-    <script src="./js/bootstrap.min.js"></script>
-    
-    <!--  custom js file  -->
-    <script src="./js/main.js"></script>
-    
-    
-    </div>
-<!--end main-->
+    <script src="script.js"></script>
 </body>
-
 </html>
