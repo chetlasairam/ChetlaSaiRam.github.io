@@ -1,38 +1,78 @@
-/* Apply your desired styling here */
+/*
+  Updated CSS for Project Page - Dark Theme
+  This file matches the style of the main portfolio.
+*/
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #2b94dacf;
-    
+/* --- Root Variables for Consistent Theming --- */
+:root {
+    --primary-color: #4A90E2; /* A brighter blue for accents */
+    --bg-color: #121212; /* Main background color */
+    --surface-color: #1E1E1E; /* For cards and surfaces */
+    --text-color: #E0E0E0; /* Primary text color */
+    --text-color-secondary: #A0A0A0; /* Lighter text for subtitles */
+    --border-color: #333333; /* For borders and dividers */
+    --shadow-color: rgba(0, 0, 0, 0.5); /* Darker shadow for depth */
 }
 
+/* --- General Body Styling --- */
+body {
+    font-family: 'Poppins', sans-serif; /* Using consistent font */
+    margin: 0;
+    padding: 2rem 0; /* Add some padding to top and bottom */
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* --- Main Content Container --- */
 .container {
     width: 80%;
+    max-width: 900px; /* Set a max-width for better readability on large screens */
     margin: 0 auto;
-    padding: 0 20px 10px 20px;
+    padding: 2rem;
     position: relative;
-    background-color: rgba(208, 206, 223, 0.377);
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px #2f2f2fb2;
+    background-color: var(--surface-color);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 24px var(--shadow-color);
 }
 
+/* --- Headings --- */
 .heading {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 0;
+    /* The large margin-bottom is no longer needed */
+    margin-bottom: 1rem;
 }
 
+h1, h2 {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-top: 2.5rem;
+}
+
+/* --- Circular Image --- */
 .circle-image {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
+    /* REMOVED: position: absolute and related properties */
+    display: block; /* Ensures margin auto works correctly */
+    margin: 4rem auto; /* Creates space above and below the image */
     overflow: hidden;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 5px solid var(--primary-color);
+    box-shadow: 0 4px 15px var(--shadow-color);
 }
 
 .circle-image img {
@@ -42,37 +82,63 @@ body {
     object-position: center;
 }
 
-
-
+/* --- Main Content Area --- */
 .content {
-    margin-top: 200px; /* Adjust as needed for content spacing */
+    margin-top: 0; /* No longer needs special margin */
+    text-align: center;
 }
 
-h1 {
-    margin-bottom: 20px;
+.content p {
+    color: var(--text-color-secondary);
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 700px; /* Constrain line width for readability */
+    margin: 1rem auto; /* Center the paragraph text */
+    text-align: left;
 }
 
+/* --- Technologies List --- */
+ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    max-width: 700px;
+    margin: 1.5rem auto;
+    text-align: left;
+}
 
-/* Rest of your styles */
+ul li {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.8rem 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color-secondary);
+    font-weight: 500;
+}
 
+/* --- GitHub Button --- */
 .github-button {
-    display: inline-block;
-    background-color: #333;
+    display: inline-flex; /* Use flexbox for alignment */
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
     color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 12px 24px;
+    border-radius: 50px;
     text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .github-button:hover {
-    background-color: #555;
-  }
-  
-  .github-logo {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    vertical-align: middle;
-  }
-  
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 2rem; /* Space below the button */
+}
+
+.github-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.4);
+    background-color: var(--primary-color); /* Keep color consistent */
+}
+
+/* Ensure Font Awesome icon is styled correctly */
+.github-button.fa-github::before {
+    font-size: 1.5rem; /* Make the icon slightly larger */
+}
