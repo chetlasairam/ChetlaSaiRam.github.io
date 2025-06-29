@@ -532,21 +532,40 @@ section:last-of-type {
 
 /* 11. Responsive Design */
 @media (max-width: 992px) {
-    .navbar-nav {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background: var(--surface-color);
-        position: absolute;
-        top: 70px;
-        left: 0;
-        padding: 1rem 0;
-        box-shadow: 0 4px 10px var(--shadow-color);
-    }
+    .navbar-toggler {
+    display: block;
+}
+
+/* This styles the dropdown menu container */
+.navbar-collapse {
+    /* By default, the menu is hidden */
+    display: none;
     
-    .navbar-nav.active {
-        display: flex;
-    }
+    /* These styles make it a full-width dropdown */
+    position: absolute;
+    top: 100%; /* Position it right below the header */
+    left: 0;
+    width: 100%;
+    background-color: var(--surface-color);
+    padding: 1rem 0;
+    box-shadow: 0 8px 16px var(--shadow-color);
+}
+
+/* When the .active class is added by JavaScript, the menu becomes visible */
+.navbar-collapse.active {
+    display: block;
+}
+
+/* This ensures the links inside the menu stack vertically */
+.navbar-nav {
+    flex-direction: column;
+    align-items: center; /* Center-align the links for a cleaner look */
+    width: 100%;
+}
+
+.navbar-nav .nav-link {
+    padding: 0.75rem 1rem; /* Add some padding for easier clicking */
+}
 
     .navbar-toggler {
         display: block;
